@@ -1,0 +1,6 @@
+framework module Pods_JuulAppTests {
+  umbrella header "Pods-JuulAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

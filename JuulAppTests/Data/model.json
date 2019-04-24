@@ -1,0 +1,44 @@
+{
+    "pods": [
+        {
+            "id": "e46567ab82044e528b810850bdeb9228",
+            "name": "mango",
+            "description": "Ripe mango with hints of tropical fruit.",
+            "price": 299,
+            "thumbnail_url": "https://s3.us-east-2.amazonaws.com/juul-coding-challenge/images/mango_thumbnail.png",
+            "image_url": "https://s3.us-east-2.amazonaws.com/juul-coding-challenge/images/mango_hires.png"
+        },
+        {
+            "id": "6e02aa3c43554ca896dc4ce6890f890e",
+            "name": "cool mint",
+            "description": "Crisp peppermint with a soothing aftertaste.",
+            "price": 185,
+            "thumbnail_url": "https://s3.us-east-2.amazonaws.com/juul-coding-challenge/images/mint_thumbnail.png",
+            "image_url": "https://s3.us-east-2.amazonaws.com/juul-coding-challenge/images/mint_hires.png"
+        },
+        {
+            "id": "534a448c22d3471e949c9a91c854f2d9",
+            "name": "fruit medley",
+            "description": "Peaches, grapes and berries with herbal notes.",
+            "price": 99,
+            "thumbnail_url": "https://s3.us-east-2.amazonaws.com/juul-coding-challenge/images/fruit_medley_thumbnail.png",
+            "image_url": "https://s3.us-east-2.amazonaws.com/juul-coding-challenge/images/fruit_medley_hires.png"
+        },
+        {
+            "id": "17df945b1d804612a8b2060c73a379ab",
+            "name": "creme brulee",
+            "description": "Vanilla cake, silky custard and creme brÃ»lÃ©e.",
+            "price": 75,
+            "thumbnail_url": "https://s3.us-east-2.amazonaws.com/juul-coding-challenge/images/creme_brulee_thumbnail.png",
+            "image_url": "https://s3.us-east-2.amazonaws.com/juul-coding-challenge/images/creme_brulee_hires.png"
+        },
+        {
+            "id": "4862b01e97684b99a2e564e3e2e2c3e0",
+            "name": "virginia tobacco",
+            "description": "Rich, unmistakable American tobacco.",
+            "price": 299,
+            "thumbnail_url": "https://s3.us-east-2.amazonaws.com/juul-coding-challenge/images/virginia_tobacco_thumbnail.png",
+            "image_url": "https://s3.us-east-2.amazonaws.com/juul-coding-challenge/images/virginia_tobacco_hires.png"
+        }
+    ]
+}

@@ -1,0 +1,760 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63A8AB494394AFCA9A2936EF /* Pods_JuulApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 758AED65D9153735AFA73023 /* Pods_JuulApp.framework */; };
+		A9DE96FF225FBAF600A8E6BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE96FE225FBAF600A8E6BD /* AppDelegate.swift */; };
+		A9DE9701225FBAF600A8E6BD /* ProductFeedViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE9700225FBAF600A8E6BD /* ProductFeedViewControler.swift */; };
+		A9DE9704225FBAF600A8E6BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DE9702225FBAF600A8E6BD /* Main.storyboard */; };
+		A9DE9706225FBAF700A8E6BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9DE9705225FBAF700A8E6BD /* Assets.xcassets */; };
+		A9DE9709225FBAF700A8E6BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DE9707225FBAF700A8E6BD /* LaunchScreen.storyboard */; };
+		A9DE9723225FBC5200A8E6BD /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE9722225FBC5200A8E6BD /* Result.swift */; };
+		A9DE9725225FBC8600A8E6BD /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE9724225FBC8600A8E6BD /* Service.swift */; };
+		A9DE9727225FBCAB00A8E6BD /* JuulAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE9726225FBCAB00A8E6BD /* JuulAPI.swift */; };
+		A9DE9729225FBD4000A8E6BD /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE9728225FBD4000A8E6BD /* Products.swift */; };
+		A9DE972E225FC0AA00A8E6BD /* ProductFeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE972D225FC0AA00A8E6BD /* ProductFeedTableViewCell.swift */; };
+		A9DE9730225FC36200A8E6BD /* ProductFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE972F225FC36200A8E6BD /* ProductFeed.swift */; };
+		A9DE9732225FC65A00A8E6BD /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE9731225FC65A00A8E6BD /* DatabaseManager.swift */; };
+		A9DE9734225FC6E100A8E6BD /* PodObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE9733225FC6E100A8E6BD /* PodObject.swift */; };
+		A9DE9738225FD62100A8E6BD /* DetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DE9737225FD62100A8E6BD /* DetailViewController.storyboard */; };
+		A9DE973A225FD7FF00A8E6BD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE9739225FD7FE00A8E6BD /* DetailViewController.swift */; };
+		A9DE973C225FDB9500A8E6BD /* PopInAndOutAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE973B225FDB9500A8E6BD /* PopInAndOutAnimator.swift */; };
+		A9DE973E225FDBAF00A8E6BD /* UIView+Screenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE973D225FDBAF00A8E6BD /* UIView+Screenshot.swift */; };
+		A9DE9740225FDBE200A8E6BD /* CollectionPushAndPoppable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE973F225FDBE200A8E6BD /* CollectionPushAndPoppable.swift */; };
+		A9DE9742225FE07600A8E6BD /* model.json in Resources */ = {isa = PBXBuildFile; fileRef = A9DE9741225FE07600A8E6BD /* model.json */; };
+		A9DE9743225FE07600A8E6BD /* model.json in Resources */ = {isa = PBXBuildFile; fileRef = A9DE9741225FE07600A8E6BD /* model.json */; };
+		A9DE9745225FE0EB00A8E6BD /* DatabaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE9744225FE0EB00A8E6BD /* DatabaseTest.swift */; };
+		A9DE974A225FE19700A8E6BD /* DataModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE9749225FE19700A8E6BD /* DataModelTest.swift */; };
+		BDB1CCD30929D5EBB6C1870F /* Pods_JuulAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2560ED6C15AA8A2C994B161B /* Pods_JuulAppTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9DE9710225FBAF700A8E6BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9DE96F3225FBAF600A8E6BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9DE96FA225FBAF600A8E6BD;
+			remoteInfo = JuulApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2560ED6C15AA8A2C994B161B /* Pods_JuulAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JuulAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B1FB872926B2105247E8996 /* Pods-JuulAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuulAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JuulAppTests/Pods-JuulAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3D58EC4B8D440EBD45FA7354 /* Pods-JuulApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuulApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-JuulApp/Pods-JuulApp.release.xcconfig"; sourceTree = "<group>"; };
+		758AED65D9153735AFA73023 /* Pods_JuulApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JuulApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98D0DC843F946D6097F271FD /* Pods-JuulApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuulApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JuulApp/Pods-JuulApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A9DE96FB225FBAF600A8E6BD /* JuulApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuulApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9DE96FE225FBAF600A8E6BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9DE9700225FBAF600A8E6BD /* ProductFeedViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductFeedViewControler.swift; sourceTree = "<group>"; };
+		A9DE9703225FBAF600A8E6BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9DE9705225FBAF700A8E6BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9DE9708225FBAF700A8E6BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9DE970A225FBAF700A8E6BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9DE970F225FBAF700A8E6BD /* JuulAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JuulAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9DE9715225FBAF700A8E6BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9DE9722225FBC5200A8E6BD /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		A9DE9724225FBC8600A8E6BD /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		A9DE9726225FBCAB00A8E6BD /* JuulAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuulAPI.swift; sourceTree = "<group>"; };
+		A9DE9728225FBD4000A8E6BD /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		A9DE972D225FC0AA00A8E6BD /* ProductFeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductFeedTableViewCell.swift; sourceTree = "<group>"; };
+		A9DE972F225FC36200A8E6BD /* ProductFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductFeed.swift; sourceTree = "<group>"; };
+		A9DE9731225FC65A00A8E6BD /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		A9DE9733225FC6E100A8E6BD /* PodObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodObject.swift; sourceTree = "<group>"; };
+		A9DE9737225FD62100A8E6BD /* DetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailViewController.storyboard; sourceTree = "<group>"; };
+		A9DE9739225FD7FE00A8E6BD /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A9DE973B225FDB9500A8E6BD /* PopInAndOutAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopInAndOutAnimator.swift; sourceTree = "<group>"; };
+		A9DE973D225FDBAF00A8E6BD /* UIView+Screenshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Screenshot.swift"; sourceTree = "<group>"; };
+		A9DE973F225FDBE200A8E6BD /* CollectionPushAndPoppable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionPushAndPoppable.swift; sourceTree = "<group>"; };
+		A9DE9741225FE07600A8E6BD /* model.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = model.json; sourceTree = "<group>"; };
+		A9DE9744225FE0EB00A8E6BD /* DatabaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseTest.swift; sourceTree = "<group>"; };
+		A9DE9749225FE19700A8E6BD /* DataModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModelTest.swift; sourceTree = "<group>"; };
+		D50C938C2EEE08D4F8479A7A /* Pods-JuulAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuulAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JuulAppTests/Pods-JuulAppTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9DE96F8225FBAF600A8E6BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A8AB494394AFCA9A2936EF /* Pods_JuulApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9DE970C225FBAF700A8E6BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDB1CCD30929D5EBB6C1870F /* Pods_JuulAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59E52813F3927BC65A7577CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98D0DC843F946D6097F271FD /* Pods-JuulApp.debug.xcconfig */,
+				3D58EC4B8D440EBD45FA7354 /* Pods-JuulApp.release.xcconfig */,
+				2B1FB872926B2105247E8996 /* Pods-JuulAppTests.debug.xcconfig */,
+				D50C938C2EEE08D4F8479A7A /* Pods-JuulAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A8969081899E07230479183E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				758AED65D9153735AFA73023 /* Pods_JuulApp.framework */,
+				2560ED6C15AA8A2C994B161B /* Pods_JuulAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9DE96F2225FBAF600A8E6BD = {
+			isa = PBXGroup;
+			children = (
+				A9DE96FD225FBAF600A8E6BD /* JuulApp */,
+				A9DE9712225FBAF700A8E6BD /* JuulAppTests */,
+				A9DE96FC225FBAF600A8E6BD /* Products */,
+				59E52813F3927BC65A7577CF /* Pods */,
+				A8969081899E07230479183E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A9DE96FC225FBAF600A8E6BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9DE96FB225FBAF600A8E6BD /* JuulApp.app */,
+				A9DE970F225FBAF700A8E6BD /* JuulAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9DE96FD225FBAF600A8E6BD /* JuulApp */ = {
+			isa = PBXGroup;
+			children = (
+				A9DE9746225FE0F100A8E6BD /* Extensions */,
+				A9DE9721225FBC2D00A8E6BD /* Network */,
+				A9DE9720225FBC1A00A8E6BD /* Sections */,
+				A9DE971F225FBC0C00A8E6BD /* Managers */,
+				A9DE971E225FBC0300A8E6BD /* Models */,
+				A9DE96FE225FBAF600A8E6BD /* AppDelegate.swift */,
+				A9DE9705225FBAF700A8E6BD /* Assets.xcassets */,
+				A9DE9707225FBAF700A8E6BD /* LaunchScreen.storyboard */,
+				A9DE970A225FBAF700A8E6BD /* Info.plist */,
+			);
+			path = JuulApp;
+			sourceTree = "<group>";
+		};
+		A9DE9712225FBAF700A8E6BD /* JuulAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9DE9748225FE12900A8E6BD /* Tests */,
+				A9DE9747225FE12200A8E6BD /* Data */,
+				A9DE9715225FBAF700A8E6BD /* Info.plist */,
+			);
+			path = JuulAppTests;
+			sourceTree = "<group>";
+		};
+		A9DE971E225FBC0300A8E6BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A9DE9728225FBD4000A8E6BD /* Products.swift */,
+				A9DE972F225FC36200A8E6BD /* ProductFeed.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A9DE971F225FBC0C00A8E6BD /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A9DE9731225FC65A00A8E6BD /* DatabaseManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		A9DE9720225FBC1A00A8E6BD /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				A9DE972B225FBE1900A8E6BD /* Detail */,
+				A9DE972A225FBE1200A8E6BD /* Feed */,
+			);
+			name = Sections;
+			sourceTree = "<group>";
+		};
+		A9DE9721225FBC2D00A8E6BD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A9DE9722225FBC5200A8E6BD /* Result.swift */,
+				A9DE9724225FBC8600A8E6BD /* Service.swift */,
+				A9DE9726225FBCAB00A8E6BD /* JuulAPI.swift */,
+				A9DE9733225FC6E100A8E6BD /* PodObject.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		A9DE972A225FBE1200A8E6BD /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				A9DE972C225FC08900A8E6BD /* FeedCell */,
+				A9DE9700225FBAF600A8E6BD /* ProductFeedViewControler.swift */,
+				A9DE9702225FBAF600A8E6BD /* Main.storyboard */,
+			);
+			name = Feed;
+			sourceTree = "<group>";
+		};
+		A9DE972B225FBE1900A8E6BD /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				A9DE9739225FD7FE00A8E6BD /* DetailViewController.swift */,
+				A9DE9737225FD62100A8E6BD /* DetailViewController.storyboard */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+		A9DE972C225FC08900A8E6BD /* FeedCell */ = {
+			isa = PBXGroup;
+			children = (
+				A9DE972D225FC0AA00A8E6BD /* ProductFeedTableViewCell.swift */,
+			);
+			name = FeedCell;
+			sourceTree = "<group>";
+		};
+		A9DE9746225FE0F100A8E6BD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A9DE973F225FDBE200A8E6BD /* CollectionPushAndPoppable.swift */,
+				A9DE973D225FDBAF00A8E6BD /* UIView+Screenshot.swift */,
+				A9DE973B225FDB9500A8E6BD /* PopInAndOutAnimator.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		A9DE9747225FE12200A8E6BD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A9DE9741225FE07600A8E6BD /* model.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A9DE9748225FE12900A8E6BD /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A9DE9744225FE0EB00A8E6BD /* DatabaseTest.swift */,
+				A9DE9749225FE19700A8E6BD /* DataModelTest.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9DE96FA225FBAF600A8E6BD /* JuulApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9DE9718225FBAF700A8E6BD /* Build configuration list for PBXNativeTarget "JuulApp" */;
+			buildPhases = (
+				52CA456C5D40E676F35A0BAD /* [CP] Check Pods Manifest.lock */,
+				A9DE96F7225FBAF600A8E6BD /* Sources */,
+				A9DE96F8225FBAF600A8E6BD /* Frameworks */,
+				A9DE96F9225FBAF600A8E6BD /* Resources */,
+				CB3DCBC2143353F59AD1BF40 /* [CP] Embed Pods Frameworks */,
+				CE7C831A498A44E2A9E4FA26 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JuulApp;
+			productName = JuulApp;
+			productReference = A9DE96FB225FBAF600A8E6BD /* JuulApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9DE970E225FBAF700A8E6BD /* JuulAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9DE971B225FBAF700A8E6BD /* Build configuration list for PBXNativeTarget "JuulAppTests" */;
+			buildPhases = (
+				2CD2CE38C1874DB4A95E39E8 /* [CP] Check Pods Manifest.lock */,
+				A9DE970B225FBAF700A8E6BD /* Sources */,
+				A9DE970C225FBAF700A8E6BD /* Frameworks */,
+				A9DE970D225FBAF700A8E6BD /* Resources */,
+				9EE35DBC99D139DDC6043A5A /* [CP] Embed Pods Frameworks */,
+				8AFCE4F7E3288399882BDA30 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9DE9711225FBAF700A8E6BD /* PBXTargetDependency */,
+			);
+			name = JuulAppTests;
+			productName = JuulAppTests;
+			productReference = A9DE970F225FBAF700A8E6BD /* JuulAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9DE96F3225FBAF600A8E6BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Denis Kalashnikov";
+				TargetAttributes = {
+					A9DE96FA225FBAF600A8E6BD = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					A9DE970E225FBAF700A8E6BD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A9DE96FA225FBAF600A8E6BD;
+					};
+				};
+			};
+			buildConfigurationList = A9DE96F6225FBAF600A8E6BD /* Build configuration list for PBXProject "JuulApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9DE96F2225FBAF600A8E6BD;
+			productRefGroup = A9DE96FC225FBAF600A8E6BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9DE96FA225FBAF600A8E6BD /* JuulApp */,
+				A9DE970E225FBAF700A8E6BD /* JuulAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9DE96F9225FBAF600A8E6BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DE9738225FD62100A8E6BD /* DetailViewController.storyboard in Resources */,
+				A9DE9709225FBAF700A8E6BD /* LaunchScreen.storyboard in Resources */,
+				A9DE9742225FE07600A8E6BD /* model.json in Resources */,
+				A9DE9706225FBAF700A8E6BD /* Assets.xcassets in Resources */,
+				A9DE9704225FBAF600A8E6BD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9DE970D225FBAF700A8E6BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DE9743225FE07600A8E6BD /* model.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CD2CE38C1874DB4A95E39E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JuulAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52CA456C5D40E676F35A0BAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JuulApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AFCE4F7E3288399882BDA30 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JuulAppTests/Pods-JuulAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EE35DBC99D139DDC6043A5A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JuulAppTests/Pods-JuulAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB3DCBC2143353F59AD1BF40 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JuulApp/Pods-JuulApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JuulApp/Pods-JuulApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE7C831A498A44E2A9E4FA26 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JuulApp/Pods-JuulApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9DE96F7225FBAF600A8E6BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DE972E225FC0AA00A8E6BD /* ProductFeedTableViewCell.swift in Sources */,
+				A9DE9730225FC36200A8E6BD /* ProductFeed.swift in Sources */,
+				A9DE973A225FD7FF00A8E6BD /* DetailViewController.swift in Sources */,
+				A9DE9723225FBC5200A8E6BD /* Result.swift in Sources */,
+				A9DE973C225FDB9500A8E6BD /* PopInAndOutAnimator.swift in Sources */,
+				A9DE9734225FC6E100A8E6BD /* PodObject.swift in Sources */,
+				A9DE973E225FDBAF00A8E6BD /* UIView+Screenshot.swift in Sources */,
+				A9DE9725225FBC8600A8E6BD /* Service.swift in Sources */,
+				A9DE9740225FDBE200A8E6BD /* CollectionPushAndPoppable.swift in Sources */,
+				A9DE9701225FBAF600A8E6BD /* ProductFeedViewControler.swift in Sources */,
+				A9DE9729225FBD4000A8E6BD /* Products.swift in Sources */,
+				A9DE9727225FBCAB00A8E6BD /* JuulAPI.swift in Sources */,
+				A9DE96FF225FBAF600A8E6BD /* AppDelegate.swift in Sources */,
+				A9DE9732225FC65A00A8E6BD /* DatabaseManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9DE970B225FBAF700A8E6BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DE974A225FE19700A8E6BD /* DataModelTest.swift in Sources */,
+				A9DE9745225FE0EB00A8E6BD /* DatabaseTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9DE9711225FBAF700A8E6BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9DE96FA225FBAF600A8E6BD /* JuulApp */;
+			targetProxy = A9DE9710225FBAF700A8E6BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9DE9702225FBAF600A8E6BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9DE9703225FBAF600A8E6BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A9DE9707225FBAF700A8E6BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9DE9708225FBAF700A8E6BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9DE9716225FBAF700A8E6BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9DE9717225FBAF700A8E6BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9DE9719225FBAF700A8E6BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98D0DC843F946D6097F271FD /* Pods-JuulApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T7H5U6SG32;
+				INFOPLIST_FILE = JuulApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = deniskalashnikov.JuulApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9DE971A225FBAF700A8E6BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D58EC4B8D440EBD45FA7354 /* Pods-JuulApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T7H5U6SG32;
+				INFOPLIST_FILE = JuulApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = deniskalashnikov.JuulApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A9DE971C225FBAF700A8E6BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B1FB872926B2105247E8996 /* Pods-JuulAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T7H5U6SG32;
+				INFOPLIST_FILE = JuulAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = deniskalashnikov.JuulAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JuulApp.app/JuulApp";
+			};
+			name = Debug;
+		};
+		A9DE971D225FBAF700A8E6BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D50C938C2EEE08D4F8479A7A /* Pods-JuulAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T7H5U6SG32;
+				INFOPLIST_FILE = JuulAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = deniskalashnikov.JuulAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JuulApp.app/JuulApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9DE96F6225FBAF600A8E6BD /* Build configuration list for PBXProject "JuulApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9DE9716225FBAF700A8E6BD /* Debug */,
+				A9DE9717225FBAF700A8E6BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9DE9718225FBAF700A8E6BD /* Build configuration list for PBXNativeTarget "JuulApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9DE9719225FBAF700A8E6BD /* Debug */,
+				A9DE971A225FBAF700A8E6BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9DE971B225FBAF700A8E6BD /* Build configuration list for PBXNativeTarget "JuulAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9DE971C225FBAF700A8E6BD /* Debug */,
+				A9DE971D225FBAF700A8E6BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9DE96F3225FBAF600A8E6BD /* Project object */;
+}
